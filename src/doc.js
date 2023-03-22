@@ -47,7 +47,68 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 4. Injecter le code créé dans la DIV sélectionnée via la variable ROOT :
 root.render( <MyFunction/> );
-- le contenu de la fonction render doit toujours être entouré de bracket < MyFunction />
+- le contenu de la fonction render doit toujours être entouré de bracket <div MyFunction />
+
+-----------------
+
+Construire du code HTML avec : React.createElement()
+
+1. Avec une fonction simple :
+function Greeting() {
+  return ( <h3>My first Component</h3> );
+}
+
+1.1 Variante avec React.createElement() :
+
+function Greeting() {
+  return ( React.createElement('h3', {}, 'first Component') );
+}
+
+Autre exemple avec un TAG imbriqué :
+
+2. Avec une fonction simple :
+function Greeting() {
+  return ( <div> <h3>My first Component</h3> </div> );
+}
+
+2.1 Variante avec React.createElement() :
+
+function Greeting() {
+  return ( 
+    React.createElement('div',
+    {},
+    React.createElement('h3', {}, 'first Component')
+    );
+};
+
+
+-----------------
+
+React.Fragment
+
+React.Fragment permet d'englober du JSX (valeur de retour HTML d'une fonction) sans y ajouter de TAGS supplémentaires :
+
+Exemple :
+function Greeting() {
+  return ( <div> <h3>My first Component</h3> </div> );
+}
+
+function Greeting() {
+  return ( <React.Fragment> My first Component </React.Fragment> );
+  // variante return ( <> My first Component </>);
+}
+
+
+1. Arboresecence classique :
+div id='root'>
+    <div> <h3>My first Component</h3> </div>
+</div>
+
+2. Arborescence avec React.Fragment :
+div id='root'>
+    My first Component
+</div>
+
 
 
 

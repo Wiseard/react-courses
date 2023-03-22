@@ -2,6 +2,25 @@
 
 REACT DOC
 
+EXTENSIONS
+
+ES7+
+
+Les raccourcis essentiels :
+RAFC : permet d'automatiser les commandes suivantes :
+- Import react from react
+- Création d'une fonction fléchée retournant une DIV
+- export default from function
+
+RFCE : permet d'automatiser les commandes suivantes : 
+- Import react from react
+- Création d'une fonction classique retournant une DIV
+- export default from function
+
+
+---------------------------------------------------------------
+
+
 Construire du code HTML :
 
 Dans le fichier INDEX.JS :

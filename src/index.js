@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 function Greeting() {
-    return <h2>My first Component</h2>;
+  return <h3>My first Component</h3>
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<Greeting/>)
+root.render(<Greeting />)

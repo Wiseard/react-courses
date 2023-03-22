@@ -107,7 +107,7 @@ div id='root'>
 2. Arborescence avec React.Fragment :
 div id='root'>
     My first Component
-</div>
+</di>
 
 
 

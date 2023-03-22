@@ -17,6 +17,9 @@ RFCE : permet d'automatiser les commandes suivantes :
 - Création d'une fonction classique retournant une DIV
 - export default from function
 
+Voir tous les raccourcis :
+https://github.com/ults-io/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
 
 ---------------------------------------------------------------
 

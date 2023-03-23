@@ -20,6 +20,7 @@ RFCE : permet d'automatiser les commandes suivantes :
 
 Voir tous les [raccourcis](https://github.com/ults-io/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md)
 
+
 ## Construire du code HTML
 
 ### `Dans le fichier INDEX.JS`
@@ -54,7 +55,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<MyFunction />)
 ```
 
-- le contenu de la fonction render doit toujours être entouré de bracket `<div MyFunction />`
+- le contenu de la fonction render doit toujours être entouré de bracket `< MyFunction />`
+
+
 
 ### `Avec React.createElement()`
 
@@ -87,6 +90,7 @@ function Greeting() {
     );
 };
 ```
+
 
 ## `React.Fragment`
 
@@ -123,7 +127,7 @@ function Greeting() {
 <div id="root">My first Component</div>
 ```
 
-## 'JSX Attribute`
+## `JSX Attribute`
 
 #### `camelCase property naming convention`
 

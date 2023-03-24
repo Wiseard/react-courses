@@ -273,3 +273,54 @@ const Booklist = () => (
   </section>
 )
 ```
+
+### Attribuer un objet en tant que `props` à chaque élément itéré via ARRAY.MAP
+```js
+const Booklist = () => (
+  <section className="booklist">
+    {books.map((book) => {
+
+      // L'objet { author, title, img } de book (l'élément itéré dans ARRAY.MAP)devient une PROPS de BOOK
+      return <Book {...book} key={book.id} /> 
+    })}
+  </section>
+)
+
+const Book = ({ author, title, img }) => {
+  return (
+    <article className="book">
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
+    </article>
+  )
+}
+```
+
+## Event : les bases
+
+```js
+const FormEvent = () => {
+
+  // Event functions
+  const handleFormInput = () => console.log('form is handled')
+  const handleButtonClick = () => console.log(`you clicked on the button`)
+
+  return (
+    <section>
+      <form>
+        <h1>Typical Form</h1>
+        <input
+          type="text"
+          // camelCase syntax
+          onChange={handleFormInput}
+        />
+      </form>
+      <button onClick={handleButtonClick}>
+        click me
+      </button>
+    </section>
+  )
+}
+```
+
